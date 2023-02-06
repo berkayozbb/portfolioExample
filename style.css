@@ -1,0 +1,650 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.contained {
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    width: 100%;
+    background-image: url("img/bg.jpeg");
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.picWrapper {
+    flex: 2;
+    height: 100vh;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pic {
+    opacity: .75;
+    border-radius: 100px;
+    margin: 15px;
+    border: 2px solid;
+    transition-duration: .5s;
+    animation-name: animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.pic:hover {
+    opacity: 1;
+}
+
+@keyframes animation {
+    0% {
+        border-color: rgba(131, 164, 207, 255);
+    }
+
+    10% {
+        border-color: rgba(159, 184, 214, 255);
+    }
+
+    20% {
+        border-color: rgba(146, 158, 174, 255);
+    }
+
+    30% {
+        border-color: rgba(115, 118, 127, 255);
+    }
+
+    40% {
+        border-color: rgba(87, 88, 92, 255);
+    }
+
+    50% {
+        border-color: rgba(70, 76, 72, 255);
+    }
+
+    60% {
+        border-color: rgba(93, 106, 89, 255);
+    }
+
+    70% {
+        border-color: rgba(93, 114, 81, 255);
+    }
+
+    80% {
+        border-color: rgba(93, 114, 81, 255);
+    }
+
+    90% {
+        border-color: rgba(93, 114, 81, 255);
+    }
+
+    100% {
+        border-color: rgba(93, 114, 81, 255);
+    }
+}
+
+.space {
+    height: 500px;
+    flex: 5;
+    overflow: hidden;
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 4em;
+    text-transform: uppercase;
+    align-self: center;
+    /* white-space: pre-wrap; */
+    text-align: center;
+}
+
+.space span {
+    display: block;
+    font-size: 120px;
+    text-transform: uppercase;
+}
+
+.space div {
+    transform: scale(.9);
+    opacity: 1;
+    position: absolute;
+    top: 20%;
+    left: 32%;
+    transform: translate(-50% -50%);
+    animation: yazi 30s linear;
+    align-self: center;
+}
+
+@keyframes yazi {
+    0% {
+        opacity: 0;
+        filter: blur(20px);
+        transform: scale(12)
+    }
+
+    3% {
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1)
+    }
+
+    10% {
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(.9)
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(.9)
+    }
+}
+
+.menu {
+    flex: 1;
+    margin: auto;
+}
+
+.options {
+    list-style-type: none;
+    text-align: center;
+}
+
+.opt {
+    font-family: Century Gothic;
+    padding: 10px;
+}
+
+#about {
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    padding-top: 80px;
+    /* height: 100vh; */
+}
+
+.baslik {
+    font-family: 'Noto Serif Sinhala', serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+.bilgi{
+    margin-bottom: 20%;
+}
+#educations {
+    width: 100%;
+    padding: 40px;
+    height: 100vh;
+}
+
+.kenarlik {
+    margin-left: 20%;
+    border-left: solid 3px;
+    margin-top: 5%;
+    padding: 12px;
+    animation-name: cizgi;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.madde {
+    margin-bottom: 30px;
+    font-size: 23px;
+}
+
+.madde span {
+    font-size: 17px;
+    display: block;
+}
+
+.listeOnu {
+    list-style-image: url(img/kitap.jpg);
+}
+
+@keyframes cizgi {
+    0% {
+        border-color: rgb(104, 58, 58);
+    }
+
+    40% {
+        border-color: gray;
+    }
+
+    80% {
+        border-color: yellowgreen;
+    }
+
+    100% {
+        border-color: whitesmoke;
+    }
+}
+
+.menuGecis{
+    transition-property: all;
+    transition-duration: .5s;
+    color: black;
+}
+
+.menuGecis:link {
+    text-decoration: none;
+}
+
+.menuGecis:hover {
+    color: rgb(9, 155, 9);
+}
+
+.menuGecis:active {
+    color: rgb(151, 252, 151);
+}
+
+.menuKutu {
+    border-radius: 20px;
+    transition: 0.5s ease-in-out all;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+.menuKutu:hover {
+    background-color: rgba(240, 248, 255, 0.493);
+}
+
+.contained2 {
+    width: 70%;
+    margin: auto;
+}
+
+.beceri {
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 20px;
+}
+
+.beceri:hover {
+    opacity: .5;
+    transition-duration: .5s;
+}
+
+.beceriChild1 {
+    width: 90%;
+    height: 10px;
+    background-color: yellowgreen;
+    border-radius: 20px;
+    animation-name: bar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.beceriChild2 {
+    width: 70%;
+    height: 10px;
+    background-color: yellowgreen;
+    border-radius: 20px;
+    animation-name: bar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.beceriChild3 {
+    width: 60%;
+    height: 10px;
+    background-color: yellowgreen;
+    border-radius: 20px;
+    animation-name: bar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.beceriChild4 {
+    width: 80%;
+    height: 10px;
+    background-color: yellowgreen;
+    border-radius: 20px;
+    animation-name: bar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.beceriChild5 {
+    width: 75%;
+    height: 10px;
+    background-color: yellowgreen;
+    border-radius: 20px;
+    animation-name: bar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.ekstra {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.yuzde {
+    float: right;
+    color: green;
+    font-size: 25px;
+}
+
+.beceriChild1:hover {
+    background-color: green;
+    transition-duration: .5s;
+}
+
+.beceriChild2:hover {
+    background-color: green;
+    transition-duration: .5s;
+}
+
+.beceriChild3:hover {
+    background-color: green;
+    transition-duration: .5s;
+}
+
+.beceriChild4:hover {
+    background-color: green;
+    transition-duration: .5s;
+}
+
+.beceriChild5:hover {
+    background-color: green;
+    transition-duration: .5s;
+}
+
+.bigFont:hover {
+    transition-duration: .5s;
+    color: yellowgreen;
+}
+
+@keyframes bar {
+    0% {
+        background-color: rgba(153, 205, 50, 0.486);
+    }
+
+    25% {
+        background-color: rgba(128, 128, 128, 0.479);
+    }
+
+    50% {
+        background-color: rgba(0, 100, 0, 0.425);
+    }
+}
+
+.eduIcon {
+    text-align: center;
+}
+
+#skills {
+    text-align: center;
+    height: 100vh;
+    padding: 40px;
+}
+
+#portfolio {
+    text-align: center;
+    padding: 40px;
+    /* height: 120vh; */
+}
+
+.portfolioWrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolioItemContainer {
+    flex: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.portfolioImage {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: rgba(71, 232, 76, 0.451) 3px solid;
+    animation-name: frame;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    opacity: 1;
+    transition-duration: .5s;
+    border-radius: 100%; 
+    width: 300px;
+    height: 300px; 
+}
+
+@keyframes frame {
+    0% {
+        border: 3px solid rgba(153, 205, 50, 0.486);
+    }
+
+    25% {
+        border: 3px solid rgba(128, 128, 128, 0.479);
+    }
+
+    50% {
+        border: 3px solid rgba(0, 100, 0, 0.425);
+    }
+}
+
+.portfolioImage:hover {
+    opacity: .7;
+    background-color: black;
+}
+
+#contact {
+    text-align: center;
+    height: 100vh;
+    padding: 40px;
+}
+
+.communaticationContainer {
+    flex: 1;
+    display: flex;
+    height: 200px;
+    margin-top: 10%;
+}
+
+.leftSide {
+    flex: 1;
+    flex-direction: column;
+}
+
+.rightSide {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputStyle {
+    margin-top: 10px;
+    border-radius: 4px;
+    padding: 6px;
+    width: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.195);
+}
+
+.textMultiple {
+    width: 50%;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.195);
+}
+
+.gonder {
+    display: block;
+    margin-left: 25%;
+    padding: 4px;
+    border-radius: 4px;
+    width: 50%;
+    margin-top: 10px;
+    transition: all .5s;
+    border: 1px solid rgba(0, 0, 0, 0.195);
+}
+
+.gonder:hover {
+    background-color: rgb(9, 155, 9);
+    color: white;
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    transition: .5s;
+}
+.fa:hover{
+    opacity: .75;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-facebook:hover {
+    background: whitesmoke;
+    color: #3B5998;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-twitter:hover {
+    background:whitesmoke ;
+    color: #55ACEE;
+  }
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  .fa-google:hover {
+    background:whitesmoke;
+    color: #dd4b39;
+  }
+  .fa-instagram {
+    background: #E1306C;
+    color: white;
+  }
+  .fa-instagram:hover{
+    background:whitesmoke ;
+    color:#E1306C ;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-linkedin:hover {
+    background:whitesmoke ;
+    color: #007bb5;
+  }
+  .mobilBerkay{
+    display: none;
+  }
+@media screen and (max-width:1310px ) {
+    .space{
+        display: block;
+    }
+    .pic{
+        margin: 0;
+        margin-bottom: 50%;
+        margin-top: 50%;
+        height: fit-content;
+        position: relative;
+        /* opacity: 0; */
+    }
+    .menu{
+        display: inline-block;
+    }
+    .beko{
+        display: none;
+    }
+    .options{
+        display: block;
+    }
+    .portfolioWrapper{
+        margin-bottom: 10%;
+    }
+    .mobilBerkay{
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+}
+@media screen and (max-width:777px ) {
+    .portfolioItemContainer{
+        display: block;
+        margin: 10%;
+    }
+    .portfolioImage{
+        width: 150px;
+        height: 150px;
+       display: block;
+       align-self: center;
+       justify-content: center;
+    }
+    .communaticationContainer{
+        display: block;
+    }
+    .rightSide{
+        margin-top: 5%;
+    }
+    .portfolioWrapper{
+        align-items: center;
+       justify-items: center;
+    }
+    #portfolio{
+        margin-top: 25%;
+    }
+}
+@media screen and (max-width:525px ){
+    .header{
+        display: inline-block;
+    }
+    .space{
+        display: none;
+    }
+    .menu{
+        width: 100%;
+        align-items: center;
+        justify-items: center; 
+        margin-bottom: 20px;
+        background-color: rgba(146, 158, 174, 255);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    
+}
+@media screen and (max-width:415px ){
+    .pic{
+        width: 80%;
+        margin:10% ;
+    }
+    .baslik{
+        max-width: 10%;
+    }
+    
+}
